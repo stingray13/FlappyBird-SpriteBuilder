@@ -12,6 +12,7 @@
     [physicsNode addChild:character];
     [self addObstacle];
     timeSinceObstacle = 0.0f;
+    // Increment the time since the last obstacle was added
 }
 
 -(void)update:(CCTime)delta
@@ -27,6 +28,7 @@ if (timeSinceObstacle > 2.0f)
     // Then reset the timer.
     timeSinceObstacle = 0.0f;
 }
+
 {
     // put update code here
 }
