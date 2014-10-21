@@ -2,8 +2,8 @@
 //  GamePlayScene.h
 //  FlappyBird
 //
-//  Created by Gerald on 2/11/14.
-//  Copyright (c) 2014 Apportable. All rights reserved.
+//  Created by Austin on 2/11/14.
+//  Copyright (c) 2014 Chicken Nugget Studios. All rights reserved.
 //
 
 #import "CCNode.h"

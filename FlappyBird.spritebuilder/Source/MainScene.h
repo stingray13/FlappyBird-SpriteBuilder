@@ -2,8 +2,8 @@
 //  MainScene.h
 //  PROJECTNAME
 //
-//  Created by Benjamin Encz on 10/10/13.
-//  Copyright (c) 2014 MakeGamesWithUs inc. Free to use for all purposes.
+//  Created by Austin on 2/11/14.
+//  Copyright (c) 2014 Chicken Nugget Studios. All rights reserved.
 //
 
 #import "CCNode.h"
