@@ -129,6 +129,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -142,7 +144,7 @@
 				<key>displayName</key>
 				<string>background</string>
 				<key>memberVarAssignmentName</key>
-				<string>_back2</string>
+				<string>_background2</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -218,8 +220,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

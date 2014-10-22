@@ -22,9 +22,9 @@
     CCNode *_bush2;
     NSArray *_bushes;
     
-    CCNode *_back1;
-    CCNode *_back2;
-    NSArray *_backs;
+    CCNode *_background1;
+    CCNode *_background2;
+    NSArray *_backgrounds;
     
     
     NSTimeInterval _sinceTouch;
@@ -47,7 +47,7 @@
     _grounds = @[_ground1, _ground2];
     _clouds = @[_cloud1, _cloud2];
     _bushes = @[_bush1, _bush2];
-    _backs =@[_back1, _back2];
+    _backgrounds =@[_background1, _background2];
 
     
     for (CCNode *ground in _grounds) {
@@ -181,23 +181,24 @@
             
             // if the left corner is one complete width off the screen,
             // move it to the right
-            if (cloud.position.x <= (-1 * cloud.contentSize.width)) {
+            if (
+                cloud.position.x <= (-1 * cloud.contentSize.width)) {
                 cloud.position = ccp(cloud.position.x +
                                      2 * cloud.contentSize.width, cloud.position.y);
-            }
         }
-            // move and loop the back
-        for (CCNode *back in _backs {
-            // move the back
-            back.position = ccp(back.position.x -
-                                 (character.physicsBody.velocity.x * delta), cloud.position.y);
+        // move and loop the backgrounds
+        for (CCNode *background in _backgrounds) {
+            // move the backgrounds
+            background.position = ccp(background.position.x -
+                                    (character.physicsBody.velocity.x * delta), background.position.y);
             
             // if the left corner is one complete width off the screen,
             // move it to the right
-            if (back.position.x <= (-1 * back.contentSize.width)) {
-                back.position = ccp(back.position.x +
-                                     2 * back.contentSize.width, back.position.y);
-            }
+            if (
+                background.position.x <= (-1 * background.contentSize.width)) {
+                background.position = ccp(background.position.x +
+                                     2 * background.contentSize.width, background.position.y);
+                }
         }
     }
     
